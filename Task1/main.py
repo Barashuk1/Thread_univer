@@ -3,7 +3,7 @@ import time
 from random import randint
 
 class InternetShop:
-    def __init__(self, working_hours=(9, 24)):
+    def __init__(self, working_hours=(9, 18)):
         self.stock = {}
         self.lock = threading.Semaphore(1)
         self.working_hours = working_hours
